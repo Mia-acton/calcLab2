@@ -16,7 +16,7 @@ public class Calculator {
         double secondNum = scan1.nextDouble();
         System.out.println("You entered: " + secondNum);
 
-        System.out.println("Please choose an operation (add, subtract, multiply, divide): ");
+        System.out.println("Please choose an operation (add, subtract, multiply, divide, exponential): ");
         String operation = scan1.next();
 
 
@@ -36,6 +36,10 @@ public class Calculator {
 
             case "divide":
                 divide(firstNum, secondNum);
+                break;
+
+            case "exponential":
+                exponential(firstNum, secondNum);
                 break;
 
             default:
@@ -67,6 +71,11 @@ public class Calculator {
         else {
             System.out.println("The total is " + result);
         }
+    }
+
+        public static void exponential(double first, double second) {
+        double result = Math.pow(first, second);
+        System.out.println("The total is " + result);
     }
 }
 
