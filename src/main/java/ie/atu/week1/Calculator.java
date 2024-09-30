@@ -34,6 +34,10 @@ public class Calculator {
                 multiply(firstNum, secondNum);
                 break;
 
+            case "divide":
+                divide(firstNum, secondNum);
+                break;
+
             default:
                 System.out.println("Invalid Operation.");
                 break;
@@ -53,6 +57,16 @@ public class Calculator {
         public static void multiply(double first, double second) {
         double result = first * second;
         System.out.println("The total is " + result);
+    }
+
+        public static void divide(double first, double second) {
+        double result = first / second;
+        if (second == 0) {
+                System.out.println("WARNING! Dividing by 0 will result in a mathematical error.");
+            }
+        else {
+            System.out.println("The total is " + result);
+        }
     }
 }
 
