@@ -30,6 +30,10 @@ public class Calculator {
                 subtract(firstNum, secondNum);
                 break;
 
+            case "multiply":
+                multiply(firstNum, secondNum);
+                break;
+
             default:
                 System.out.println("Invalid Operation.");
                 break;
@@ -41,8 +45,13 @@ public class Calculator {
             System.out.println("The total is " + result);
     }
 
-    public static void subtract(double first, double second) {
+        public static void subtract(double first, double second) {
         double result = first - second;
+            System.out.println("The total is " + result);
+    }
+
+        public static void multiply(double first, double second) {
+        double result = first * second;
         System.out.println("The total is " + result);
     }
 }
