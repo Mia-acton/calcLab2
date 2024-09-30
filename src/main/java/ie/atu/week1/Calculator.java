@@ -25,6 +25,11 @@ public class Calculator {
             case "add":
                 add(firstNum, secondNum);
                 break;
+
+            case "subtract":
+                subtract(firstNum, secondNum);
+                break;
+
             default:
                 System.out.println("Invalid Operation.");
                 break;
@@ -34,6 +39,11 @@ public class Calculator {
         public static void add(double first, double second) {
         double result = first + second;
             System.out.println("The total is " + result);
+    }
+
+    public static void subtract(double first, double second) {
+        double result = first - second;
+        System.out.println("The total is " + result);
     }
 }
 
